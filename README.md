@@ -190,7 +190,8 @@ If you use ProViCNet in your research, please cite:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- PI-CAI Challenge for the mpMRI dataset
-- The Cancer Imaging Archive (TCIA) for the TRUS dataset
+- [PI-CAI Challenge](https://pi-cai.grand-challenge.org/) for the mpMRI dataset  
+  - **Reference**: Saha, Anindo, et al. "Artificial intelligence and radiologists at prostate cancer detection in MRI—the PI-CAI challenge." *Medical Imaging with Deep Learning, short paper track*. 2023.
+- [The Cancer Imaging Archive (TCIA)](https://www.cancerimagingarchive.net/collection/prostate-mri-us-biopsy/) for the TRUS dataset  
+  - **Reference**: Natarajan, S., et al. "Prostate MRI and ultrasound with pathology and coordinates of tracked biopsy (prostate-MRI-US-biopsy)." *The Cancer Imaging Archive* 10 (2020): 7937.
 - DINOv2 team for the vision transformer backbone
->>>>>>> Initial commit
