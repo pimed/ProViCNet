@@ -1,8 +1,6 @@
 <<<<<<< HEAD
 # ProViCNet
 Prostate-Specific Foundation Models for Enhanced Detection of Clinically Significant Cancer
-=======
-# ProViCNet: Foundation Model for Prostate Cancer Detection
 
 ## Overview
 ProViCNet is an organ-specific foundation model designed for prostate cancer detection using multimodal medical imaging data. The model leverages the power of vision transformers and contrastive learning to achieve robust performance across different imaging modalities (mpMRI and TRUS).
