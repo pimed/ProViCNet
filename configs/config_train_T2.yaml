@@ -1,0 +1,15 @@
+---
+Modality: 'T2'
+paths:
+  Image_path: '/path/MRI/T2/' # ex: patientID_caseID_trus.nii.gz
+  Gland_path: '/path/MRI/MRI_Prostate_Label/' # ex: patientID_caseID__trus_prostate_label.nii.gz
+  Label_path: '/path/MRI/MRI_ROI_Bxconfirmed_Label/' # ex: patientID_caseID__trus_roi_bxconfirmed_label.nii.gz
+file_extensions:
+  Image_name: '_t2.nii.gz'
+  Gland_name: '_mri_prostate_label.nii.gz'
+  Cancer_name: '_mri_roi_bxconfirmed_label.nii.gz'
+FOLD_IDX: 0
+
+SplitValidation:
+    internal_split: '/path/data_split/splits_final.json'
+    testset: '/path/data_split/Stanford_multimodal_bx_test_data.json'

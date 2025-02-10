@@ -1,0 +1,43 @@
+dino_backbones = {
+    'dinov2_s':{
+        'name':'dinov2_vits14',
+        'embedding_size':384,
+        'patch_size':14
+    },
+    'dinov2_b':{
+        'name':'dinov2_vitb14',
+        'embedding_size':768,
+        'patch_size':14
+    },
+    'dinov2_l':{
+        'name':'dinov2_vitl14',
+        'embedding_size':1024,
+        'patch_size':14
+    },
+    'dinov2_g':{
+        'name':'dinov2_vitg14',
+        'embedding_size':1536,
+        'patch_size':14
+    },
+
+    'dinov2_s_reg':{
+        'name':'dinov2_vits14_reg',
+        'embedding_size':384,
+        'patch_size':14
+    },
+    'dinov2_b_reg':{
+        'name':'dinov2_vitb14_reg',
+        'embedding_size':768,
+        'patch_size':14
+    },
+    'dinov2_l_reg':{
+        'name':'dinov2_vitl14_reg',
+        'embedding_size':1024,
+        'patch_size':14
+    },
+    'dinov2_g_reg':{
+        'name':'dinov2_vitg14_reg',
+        'embedding_size':1536,
+        'patch_size':14
+    },
+}

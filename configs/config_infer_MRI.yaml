@@ -1,0 +1,13 @@
+# config_MRI.yaml
+sample_dataset:
+  T2: ["dataset_MRI/sample_t2.nii.gz",]
+  ADC: ["dataset_MRI/sample_adc.nii.gz",]
+  DWI: ["dataset_MRI/sample_dwi.nii.gz",]
+  Gland: ["dataset_MRI/sample_mask.nii.gz",]
+  Cancer: ["dataset_MRI/sample_lesions.nii.gz",]
+
+model_weights:
+  T2: "https://huggingface.co/pimed/ProViCNet/resolve/main/T2_best.pth"
+  ADC: "https://huggingface.co/pimed/ProViCNet/resolve/main/ADC_best.pth"
+  DWI: "https://huggingface.co/pimed/ProViCNet/resolve/main/DWI_best.pth"
+  mpMRI: "https://huggingface.co/pimed/ProViCNet/resolve/main/mpMRI_Fusion_best.pth"

@@ -1,0 +1,8 @@
+# config_MRI.yaml
+sample_dataset:
+  TRUS: ["dataset_TRUS/sample_trus.nii.gz"]
+  Gland: ["dataset_TRUS/sample_trus_prostate_label.nii.gz"]
+  Cancer: ["dataset_TRUS/sample_trus_roi_bxconfirmed_label.nii.gz"]
+
+model_weights:
+  TRUS: "https://huggingface.co/pimed/ProViCNet/resolve/main/TRUS_best.pth"

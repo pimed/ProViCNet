@@ -1,0 +1,15 @@
+---
+Modality: 'TRUS'
+paths:
+  Image_path: '/path/TRUS/TRUS/' # ex: patientID_caseID_trus.nii.gz
+  Gland_path: '/path/TRUS/TRUS_Prostate_Label/' # ex: patientID_caseID__trus_prostate_label.nii.gz
+  Label_path: '/path/TRUS/TRUS_ROI_Bxconfirmed_Label/' # ex: patientID_caseID__trus_roi_bxconfirmed_label.nii.gz
+file_extensions:
+  Image_name: '_trus.nii.gz'
+  Gland_name: '_trus_prostate_label.nii.gz'
+  Cancer_name: '_trus_roi_bxconfirmed_label.nii.gz'
+FOLD_IDX: 0
+
+SplitValidation:
+    internal_split: '/path/data_split/splits_final.json'
+    testset: '/path/data_split/Stanford_multimodal_bx_test_data.json'
