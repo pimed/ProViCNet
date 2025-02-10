@@ -1,17 +1,20 @@
-# ProViCNet
-Prostate-Specific Foundation Models for Enhanced Detection of Clinically Significant Cancer
+# ProViCNet  
+**Prostate-Specific Foundation Models for Enhanced Detection of Clinically Significant Cancer**  
 
-## Overview
-ProViCNet is an organ-specific foundation model designed for prostate cancer detection using multimodal medical imaging data. The model leverages the power of vision transformers and contrastive learning to achieve robust performance across different imaging modalities (mpMRI and TRUS).
+## Overview  
+ProViCNet is an organ-specific foundation model designed for prostate cancer detection using multimodal medical imaging data. The model leverages the power of vision transformers and contrastive learning to achieve robust performance across different imaging modalities (mpMRI and TRUS).  
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/provicnet-organ-specific-foundation-model-for/prostate-cancer-detection-on-picai)](https://paperswithcode.com/paper/provicnet-organ-specific-foundation-model-for)
+📄 **Reference Paper:** [ProViCNet: Organ-Specific Foundation Model for Prostate Cancer Detection](https://doi.org/10.48550/arXiv.2502.00366)  
+
 
 ## Features
-- 🔥 Pre-trained on both mpMRI and TRUS modalities
+- 🔥 Pre-trained on mpMRIs and TRUS modalities
 - 🎯 Patch-level feature extraction capabilities
 - 🖼️ Segmentation prediction for cancer regions
-- 🔄 Multi-modal fusion architecture
 - 📊 Visualization tools for analysis
+
+
+![main.png](image/main.png)
 
 ## Installation
 Before installing dependencies, install PyTorch based on your system configuration.
@@ -33,7 +36,7 @@ pip install -r requirements.txt
 
 ## Model Architecture
 ProViCNet consists of two main components:
-1. **Feature Extractor**: Based on DINOv2 vision transformer architecture
+1. **Feature Extractor**: Based on DINOv2 vision transformer architecture + Patch-level contrastive learning
 2. **Segmentation Head**: Specialized decoder for precise cancer region delineation
 
 ## Usage
