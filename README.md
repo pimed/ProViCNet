@@ -14,6 +14,7 @@ ProViCNet is an organ-specific foundation model designed for prostate cancer det
 - 📊 Visualization tools for analysis
 
 ## Installation
+Before installing dependencies, install PyTorch based on your system configuration.
 
 ```bash
 # Clone the repository
@@ -27,6 +28,8 @@ conda activate provicnet
 # Install required packages
 pip install -r requirements.txt
 ```
+
+
 
 ## Model Architecture
 ProViCNet consists of two main components:
@@ -57,14 +60,18 @@ python inference_TRUS.py \
 
 ## Additional Configuration
 
-- **--nClass**: Number of segmentation classes (default: 4) / background, normal gland, indolent cancer, clinically significant prostate cancer.
-- **--nChannel**: Number of channels (consecutive slices; default: 9).
+- **--nClass**: Number of segmentation classes (default: 4). The classes are:  
+  - 0: Background  
+  - 1: Normal prostate gland  
+  - 2: Indolent prostate cancer  
+  - 3: Clinically significant prostate cancer (csPCa)  
+- **--nChannel**: Number of input channels (consecutive slices; default: 9).
 - **--contrastive**: Enable (1) or disable (0) contrastive learning (default: 1).
 - **--cuda_device**: CUDA device index to use (default: 0).
-- **--only_csPCa**: If True, keep only csPCa; otherwise merge cancer channels (default: False).
-- **--save_folder**: Folder to save predicted outputs (default: `results_ProViCNet/`).
-- **--visualization_folder**: Folder to save visualization images (default: `visualization_ProViCNet/`).
-- **--threshold**: Threshold for converting probabilities to binary labels (default: 0.4).
+- **--only_csPCa**: If `True`, keeps only clinically significant prostate cancer (csPCa); otherwise, merges cancer channels.
+- **--save_folder**: Directory to save predicted outputs (default: `results_ProViCNet/`).
+- **--visualization_folder**: Directory to save visualization images (default: `visualization_ProViCNet/`).
+- **--threshold**: Probability threshold for converting outputs into binary labels (default: 0.4).
 - **--small_batchsize**: Batch size for inference (default: 16).
 
 
