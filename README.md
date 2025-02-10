@@ -75,6 +75,40 @@ python inference_TRUS.py \
 - **--small_batchsize**: Batch size for inference (default: 16).
 
 
+
+## Model Load
+
+The model is initialized using the `GetModel` function, which loads the appropriate architecture based on the given arguments.
+
+# Model Load
+
+model_config:
+```bash
+# Model initialization
+MODEL = GetModel( \
+    args.ModelName, \
+    args.nClass, \
+    args.nChannel, \
+    args.img_size, \
+    vit_backbone=args.vit_backbone, \
+    contrastive=args.contrastive, \
+    US=args.US \
+)
+```
+
+## Arguments
+- **args.ModelName**: Specifies the model architecture (e.g., "ProViCNet", "ProViDNet", "UCTransNet")
+- **args.nClass**: Number of segmentation classes (default: 4). The classes are:  
+ - 0: Background  
+ - 1: Normal prostate gland  
+ - 2: Indolent prostate cancer  
+ - 3: Clinically significant prostate cancer (csPCa)  
+- **args.nChannel**: Number of input channels (default: 9, for multi-slice MRI inputs)
+- **args.img_size**: Input image resolution (e.g., 448 for ProViCNet, 256 for other models)
+- **args.vit_backbone**: Specifies the Vision Transformer (ViT) backbone used for feature extraction
+- **args.contrastive**: Enable (1) or disable (0) contrastive learning
+- **args.US**: Indicates whether ultrasound (US) modality is used
+
 ## Feature Extraction & Analysis
 
 ### Patch-level Feature Extraction
@@ -90,6 +124,9 @@ Tokens_DWI = getPatchTokens(model, Image_DWI, Posit, args)
 visualize_featuremap(Tokens_T2, Image_T2, Label, save_path)
 ```
 
+![featuremap.png](image/featuremap.png)
+
+
 ### Segmentation Prediction
 The model provides comprehensive cancer region segmentation:
 
@@ -97,6 +134,8 @@ The model provides comprehensive cancer region segmentation:
 # Get predictions
 preds_T2, preds_ADC, preds_DWI, preds_MP = ProViCNet_Inference(
     Image_T2, Image_ADC, Image_DWI, Posit, args, Models, Model_Fusion)
+
+![segmentation.png](image/segmentation.png)
 
 # Save results
 saveData(preds_MP_softmax[:, 2], filename, save_path)
