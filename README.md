@@ -182,7 +182,7 @@ ProViCNet/
 If you use ProViCNet in your research, please cite:
 ```bibtex
 @article{provicnet2024,
-  title={ProViCNet: Organ-specific Foundation Model for Prostate Cancer Detection},
+  title={Prostate-Specific Foundation Models with Patch-Level Contrast for Cancer Detection},
   author={Your Name},
   journal={arXiv preprint},
   year={2024}
