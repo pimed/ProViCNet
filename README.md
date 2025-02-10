@@ -4,7 +4,7 @@
 ## Overview  
 ProViCNet is an organ-specific foundation model designed for prostate cancer detection using multimodal medical imaging data. The model leverages the power of vision transformers and contrastive learning to achieve robust performance across different imaging modalities (mpMRI and TRUS).  
 
-📄 **Reference Paper:** [ProViCNet: Organ-Specific Foundation Model for Prostate Cancer Detection](https://doi.org/10.48550/arXiv.2502.00366)  
+📄 **Reference Paper:** [Prostate-Specific Foundation Models with Patch-Level Contrast for Cancer Detection](https://doi.org/10.48550/arXiv.2502.00366)  
 
 
 ## Features
