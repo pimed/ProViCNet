@@ -17,7 +17,7 @@ ProViCNet is an organ-specific foundation model designed for prostate cancer det
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ProViCNet.git
+git clone https://github.com/pimed/ProViCNet.git
 cd ProViCNet
 
 # Create a conda environment
