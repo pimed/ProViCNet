@@ -167,15 +167,15 @@ Pre-trained weights are automatically downloaded from Hugging Face Hub:
 ## Directory Structure
 ```
 ProViCNet/
-├── config_MRI.yaml        # Configuration for MRI inference
-├── config_TRUS.yaml      # Configuration for TRUS inference
-├── dataset_MRI/          # Sample MRI dataset
-├── dataset_TRUS/         # Sample TRUS dataset
-├── inference_mpMRI.py    # MRI inference script
-├── inference_TRUS.py     # TRUS inference script
-├── ProViCNet/           # Core model implementation
-├── results_ProViCNet/    # Output directory
-└── visualization_ProViCNet/ # Visualization outputs
+├── config_MRI.yaml          # Configuration for MRI inference
+├── config_TRUS.yaml         # Configuration for TRUS inference
+├── dataset_MRI/             # Sample MRI dataset
+├── dataset_TRUS/            # Sample TRUS dataset
+├── ProViCNet/               # Core model implementation
+├── visualization_ProViCNet/ # Visualization outputs
+├── inference_mpMRI.py       # MRI inference script
+└── inference_TRUS.py        # TRUS inference script
+
 ```
 
 ## Citation
