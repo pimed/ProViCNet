@@ -102,10 +102,10 @@ MODEL = GetModel( \
 ## Arguments
 - **args.ModelName**: Specifies the model architecture (e.g., "ProViCNet", "ProViDNet", "UCTransNet")
 - **args.nClass**: Number of segmentation classes (default: 4). The classes are:  
- - 0: Background  
- - 1: Normal prostate gland  
- - 2: Indolent prostate cancer  
- - 3: Clinically significant prostate cancer (csPCa)  
+  - 0: Background  
+  - 1: Normal prostate gland  
+  - 2: Indolent prostate cancer  
+  - 3: Clinically significant prostate cancer (csPCa)  
 - **args.nChannel**: Number of input channels (default: 9, for multi-slice MRI inputs)
 - **args.img_size**: Input image resolution (e.g., 448 for ProViCNet, 256 for other models)
 - **args.vit_backbone**: Specifies the Vision Transformer (ViT) backbone used for feature extraction
