@@ -138,11 +138,11 @@ The model provides comprehensive cancer region segmentation:
 preds_T2, preds_ADC, preds_DWI, preds_MP = ProViCNet_Inference(
     Image_T2, Image_ADC, Image_DWI, Posit, args, Models, Model_Fusion)
 
-![segmentation.png](image/segmentation.png)
-
 # Save results
 saveData(preds_MP_softmax[:, 2], filename, save_path)
 ```
+
+![segmentation.png](image/segmentation.png)
 
 ## Sample Data
 The repository includes example cases for both modalities:
