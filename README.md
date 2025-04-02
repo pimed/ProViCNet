@@ -88,14 +88,14 @@ The model is initialized using the `GetModel` function, which loads the appropri
 model_config:
 ```bash
 # Model initialization
-MODEL = GetModel( \
-    args.ModelName, \
-    args.nClass, \
-    args.nChannel, \
-    args.img_size, \
-    vit_backbone=args.vit_backbone, \
-    contrastive=args.contrastive, \
-    US=args.US \
+MODEL = GetModel(
+    args.ModelName,
+    args.nClass,
+    args.nChannel,
+    args.img_size,
+    vit_backbone=args.vit_backbone,
+    contrastive=args.contrastive,
+    US=args.US
 )
 ```
 
