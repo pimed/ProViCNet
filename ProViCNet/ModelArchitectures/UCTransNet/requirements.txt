@@ -26,7 +26,7 @@ opencv-python-headless==4.5.2.54
 pandas==1.1.5
 Pillow==8.3.1
 pretrainedmodels==0.7.4
-protobuf==3.17.3
+protobuf>=4.25.8
 pyparsing==2.4.7
 pyquery
 python-dateutil==2.8.1
